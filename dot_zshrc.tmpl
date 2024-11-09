@@ -26,11 +26,11 @@ setopt hist_find_no_dups
 alias hh=hstr
 
 export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH"
-export PATH="/Users/g.logar/mssh/bin:$PATH"
-export PATH="/Users/g.logar/go/bin:$PATH"
+export PATH="/Users/{{ .chezmoi.username }}/mssh/bin:$PATH"
+export PATH="/Users/{{ .chezmoi.username }}/go/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/mongodb-community@4.4/bin:$PATH"
-export PATH="/Users/g.logar/.rd/bin:$PATH"
+export PATH="/Users/{{ .chezmoi.username }}/.rd/bin:$PATH"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home/
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -70,5 +70,5 @@ export FZF_DEFAULT_OPTS=" \
 export EDITOR=nvim
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/g.logar/.rd/bin:$PATH"
+export PATH="/Users/{{ .chezmoi.username }}/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
