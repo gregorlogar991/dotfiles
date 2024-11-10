@@ -12,5 +12,5 @@ brew install chezmoi
 2. Install dotfiles and Brew packages and apps
 
 ```bash
-chezmoi init gregorlogar991
+chezmoi init --apply gregorlogar991
 ```
