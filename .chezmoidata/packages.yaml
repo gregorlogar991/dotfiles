@@ -54,6 +54,7 @@ packages:
       - "glib"
       - "gnupg"
       - "go"
+      - "gomplate"
       - "grep"
       - "grpcurl"
       - "gum"
