@@ -19,6 +19,7 @@ packages:
       - "maccy"
       - "mysqlworkbench"
       - "obsidian"
+      - "postman"
       - "rancher"
       - "rectangle"
       - "redisinsight"
