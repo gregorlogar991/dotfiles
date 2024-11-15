@@ -68,6 +68,7 @@ packages:
       - "jq"
       - "k9s"
       - "kind"
+      - "kor"
       - "kubecolor"
       - "kubectx"
       - "kubent"
