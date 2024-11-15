@@ -1,6 +1,7 @@
 packages:
   darwin:
     taps:
+      - "'sre/tools', 'git@gitlab.sportradar.ag:sre/homebrew-tools.git'"
       - "argoproj/tap"
       - "arl/arl"
       - "fujiwara/tap"
@@ -9,7 +10,7 @@ packages:
       - "jesseduffield/lazygit"
       - "little-angry-clouds/my-brews"
       - "mongodb/brew"
-      - "'sre/tools', 'git@gitlab.sportradar.ag:sre/homebrew-tools.git'"
+      - "robusta-dev/homebrew-krr"
     casks:
       - "corretto@17"
       - "dbeaver-community"
@@ -69,6 +70,7 @@ packages:
       - "k9s"
       - "kind"
       - "kor"
+      - "krr"
       - "kubecolor"
       - "kubectx"
       - "kubent"
