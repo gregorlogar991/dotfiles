@@ -74,3 +74,6 @@ export PATH="/Users/{{ .chezmoi.username }}/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 bindkey -v
+
+[[ $ZED_TERM == true && $ZED_TASK != true ]] && tmux new
+

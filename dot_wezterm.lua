@@ -25,140 +25,140 @@ config = {
 	},
 
 	-- TAB
-	hide_tab_bar_if_only_one_tab = false,
+	hide_tab_bar_if_only_one_tab = true,
 	tab_bar_at_bottom = true,
 	use_fancy_tab_bar = false,
 	tab_and_split_indices_are_zero_based = false,
 
 	-- TMUX LEADER
-	leader = { key = "a", mods = "CTRL", timeout_milliseconds = 5000 },
+	-- leader = { key = "a", mods = "CTRL", timeout_milliseconds = 5000 },
 
 	-- KEYS
-	keys = {
-		{
-			mods = "LEADER",
-			key = "-",
-			action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
-		},
-		{
-			mods = "LEADER",
-			key = "|",
-			action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
-		},
-		{
-			mods = "LEADER",
-			key = "m",
-			action = wezterm.action.TogglePaneZoomState,
-		},
-		{
-			mods = "LEADER",
-			key = "0",
-			action = wezterm.action.PaneSelect({
-				mode = "SwapWithActive",
-			}),
-		},
-		{
-			mods = "LEADER",
-			key = "LeftArrow",
-			action = act.AdjustPaneSize({ "Left", 5 }),
-		},
-		{
-			mods = "LEADER",
-			key = "RightArrow",
-			action = act.AdjustPaneSize({ "Right", 5 }),
-		},
-		{
-			mods = "LEADER",
-			key = "UpArrow",
-			action = act.AdjustPaneSize({ "Up", 5 }),
-		},
-		{
-			mods = "LEADER",
-			key = "DownArrow",
-			action = act.AdjustPaneSize({ "Down", 5 }),
-		},
-		{
-			mods = "CTRL",
-			key = "b",
-			action = act.ActivateTabRelative(-1),
-		},
-		{
-			mods = "CTRL",
-			key = "n",
-			action = act.ActivateTabRelative(1),
-		},
-		{
-			mods = "LEADER",
-			key = "n",
-			action = act.MoveTabRelative(1),
-		},
-		{
-			mods = "LEADER",
-			key = "b",
-			action = act.MoveTabRelative(-1),
-		},
-		{
-			mods = "LEADER",
-			key = "c",
-			action = act.SwitchToWorkspace,
-		},
-		{
-			mods = "CTRL",
-			key = "x",
-			action = wezterm.action.CloseCurrentPane({ confirm = true }),
-		},
-		{
-			mods = "LEADER",
-			key = "h",
-			action = wezterm.action.ActivatePaneDirection("Left"),
-		},
-		{
-			mods = "LEADER",
-			key = "j",
-			action = wezterm.action.ActivatePaneDirection("Down"),
-		},
-		{
-			mods = "LEADER",
-			key = "k",
-			action = wezterm.action.ActivatePaneDirection("Up"),
-		},
-		{
-			mods = "LEADER",
-			key = "l",
-			action = wezterm.action.ActivatePaneDirection("Right"),
-		},
-		{
-			mods = "LEADER",
-			key = ",",
-			action = act.PromptInputLine({
-				description = "Enter new name for tab",
-				action = wezterm.action_callback(function(window, pane, line)
-					if line then
-						window:active_tab():set_title(line)
-					end
-				end),
-			}),
-		},
-		{
-			mods = "LEADER",
-			key = ".",
-			action = act.PromptInputLine({
-				description = "Enter new name for workspace",
-				action = wezterm.action_callback(function(window, pane, line)
-					if line then
-						wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
-					end
-				end),
-			}),
-		},
-		{
-			mods = "LEADER",
-			key = "s",
-			action = act.ShowLauncherArgs({
-				flags = "FUZZY|WORKSPACES",
-			}),
-		},
-	},
+	-- keys = {
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "-",
+	-- 		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "|",
+	-- 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "m",
+	-- 		action = wezterm.action.TogglePaneZoomState,
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "0",
+	-- 		action = wezterm.action.PaneSelect({
+	-- 			mode = "SwapWithActive",
+	-- 		}),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "LeftArrow",
+	-- 		action = act.AdjustPaneSize({ "Left", 5 }),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "RightArrow",
+	-- 		action = act.AdjustPaneSize({ "Right", 5 }),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "UpArrow",
+	-- 		action = act.AdjustPaneSize({ "Up", 5 }),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "DownArrow",
+	-- 		action = act.AdjustPaneSize({ "Down", 5 }),
+	-- 	},
+	-- 	{
+	-- 		mods = "CTRL",
+	-- 		key = "b",
+	-- 		action = act.ActivateTabRelative(-1),
+	-- 	},
+	-- 	{
+	-- 		mods = "CTRL",
+	-- 		key = "n",
+	-- 		action = act.ActivateTabRelative(1),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "n",
+	-- 		action = act.MoveTabRelative(1),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "b",
+	-- 		action = act.MoveTabRelative(-1),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "c",
+	-- 		action = act.SwitchToWorkspace,
+	-- 	},
+	-- 	{
+	-- 		mods = "CTRL",
+	-- 		key = "x",
+	-- 		action = wezterm.action.CloseCurrentPane({ confirm = true }),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "h",
+	-- 		action = wezterm.action.ActivatePaneDirection("Left"),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "j",
+	-- 		action = wezterm.action.ActivatePaneDirection("Down"),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "k",
+	-- 		action = wezterm.action.ActivatePaneDirection("Up"),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "l",
+	-- 		action = wezterm.action.ActivatePaneDirection("Right"),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = ",",
+	-- 		action = act.PromptInputLine({
+	-- 			description = "Enter new name for tab",
+	-- 			action = wezterm.action_callback(function(window, pane, line)
+	-- 				if line then
+	-- 					window:active_tab():set_title(line)
+	-- 				end
+	-- 			end),
+	-- 		}),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = ".",
+	-- 		action = act.PromptInputLine({
+	-- 			description = "Enter new name for workspace",
+	-- 			action = wezterm.action_callback(function(window, pane, line)
+	-- 				if line then
+	-- 					wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
+	-- 				end
+	-- 			end),
+	-- 		}),
+	-- 	},
+	-- 	{
+	-- 		mods = "LEADER",
+	-- 		key = "s",
+	-- 		action = act.ShowLauncherArgs({
+	-- 			flags = "FUZZY|WORKSPACES",
+	-- 		}),
+	-- 	},
+	-- },
 }
 
 wezterm.on("update-right-status", function(window, _)
