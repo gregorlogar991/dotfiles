@@ -1,7 +1,8 @@
 [
   {
     "label": "lazygit",
-    "command": "lazygit",
+    "env": { "ZED_TASK": "true" },
+    "command": "ZED_TERM=false lazygit",
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
     "reveal": "always"
