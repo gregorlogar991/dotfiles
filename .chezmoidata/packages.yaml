@@ -38,6 +38,7 @@ packages:
       - "awscli"
       - "bat"
       - "broot"
+      - "btop"
       - "cilium-cli"
       - "cmake"
       - "cookiecutter"
