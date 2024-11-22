@@ -44,6 +44,7 @@ packages:
       - "cookiecutter"
       - "curl"
       - "direnv"
+      - "dive"
       - "docker"
       - "docker-buildx"
       - "docker-compose"
