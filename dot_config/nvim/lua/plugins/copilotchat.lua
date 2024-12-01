@@ -28,6 +28,16 @@ return {
 				desc = "CopilotChat - Fix diagnostic",
 			},
 			{
+				"<leader>aq",
+				function()
+					local input = vim.fn.input("Quick Chat: ")
+					if input ~= "" then
+						require("CopilotChat").ask(input, { selection = require("CopilotChat.select").buffer })
+					end
+				end,
+				desc = "CopilotChat - Quick chat",
+			},
+			{
 				"<leader>ar",
 				"<cmd>CopilotChatReset<cr>", -- Reset chat history and clear buffer.
 				desc = "CopilotChat - Reset chat history and clear buffer",
