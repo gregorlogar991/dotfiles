@@ -22,6 +22,7 @@ packages:
       - "obsidian"
       - "postman"
       - "rancher"
+      - "raycast"
       - "rectangle"
       - "redisinsight"
       - "shottr"
