@@ -47,9 +47,10 @@ return {
 				["<C-u>"] = { "<C-u>zz", noremap = true, desc = "Move half page up on middle" },
 				["<C-d>"] = { "<C-d>zz", noremap = true, desc = "Move half page down on middle" },
 
+				["<leader>aa"] = { "oif err != nil {<CR>}<Esc>Oreturn err<Esc>", desc = "Golang error block" },
+				["<leader>as"] = { "ggVG", desc = "Select whole file" },
+
 				-- navigate buffer tabs
-				-- ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
-				-- ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 				["<leader><Right>"] = {
 					function()
 						require("astrocore.buffer").nav(vim.v.count1)
