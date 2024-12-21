@@ -55,6 +55,12 @@
     }
   },
   {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space o": "project_panel::ToggleFocus"
+    }
+  },
+  {
     "context": "vim_mode == normal",
     "bindings": {
       "space c": "pane::CloseActiveItem",
@@ -69,6 +75,9 @@
       "space |": "pane::SplitVertical",
       "space -": "pane::SplitHorizontal",
       "space g g": ["task::Spawn", { "task_name": "lazygit" }],
+      "space o": "project_panel::ToggleFocus",
+      "space a i": "assistant::ToggleFocus",
+      "space L": "language_selector::Toggle",
       "ctrl-shift-u": "vim::ScrollUp",
       "ctrl-shift-d": "vim::ScrollDown",
       "ctrl-u": ["workspace::SendKeystrokes", "ctrl-shift-u z z"],
