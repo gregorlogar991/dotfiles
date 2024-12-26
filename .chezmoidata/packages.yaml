@@ -14,6 +14,7 @@ packages:
       - "robusta-dev/homebrew-krr"
     casks:
       - "corretto@17"
+      - "datagrip"
       - "dbeaver-community"
       - "font-hack-nerd-font"
       - "intellij-idea"

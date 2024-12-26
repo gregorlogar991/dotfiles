@@ -37,7 +37,7 @@ alias catn="bat --style plain --theme ansi"
 alias tree="eza --tree --icons"
 alias tree2="broot"
 alias mkdir="mkdir -p"
-alias fzfp="fzf --preview='bat {}'"
+alias fzfp="fzf --preview='bat --color=always {}'"
 
 #Tools
 alias vim="nvim"

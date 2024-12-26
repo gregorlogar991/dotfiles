@@ -1,5 +1,3 @@
---if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -16,12 +14,31 @@ return {
 				"dockerls",
 				"gopls",
 				"helm_ls",
-				"java_language_server",
+				"jdtls",
 				"jsonls",
 				"grammarly",
 				"pylsp",
 				"tflint",
 			},
+			-- servers = {
+			--     gopls = {
+			--         on_attach = on_attach,
+			--         capabilities = capabilities,
+			--         cmd = { "gopls" },
+			--         signatureHelp = false,
+			--         filetypes = { "go", "gomod", "gowork", "gotmpl" },
+			--         -- root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+			--         settings = {
+			--             gopls = {
+			--                 completeUnimported = true,
+			--                 usePlaceholders = true,
+			--                 analyses = {
+			--                     unusedparams = true,
+			--                 },
+			--             },
+			--         },
+			--     },
+			-- },
 		},
 	},
 	-- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
@@ -43,6 +60,7 @@ return {
 		opts = {
 			ensure_installed = {
 				"python",
+				"delve",
 				-- add more arguments for adding more debuggers
 			},
 		},
