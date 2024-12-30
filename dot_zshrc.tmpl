@@ -43,7 +43,6 @@ eval "$(zoxide init zsh)"
 
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source <(kubectl-argo-rollouts completion zsh)
 source <(stern --completion=zsh)
 source <(kubectl completion zsh 2>/dev/null)
 
@@ -72,8 +71,4 @@ export EDITOR=nvim
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/{{ .chezmoi.username }}/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-
-bindkey -v
-
-# [[ $ZED_TERM == true && $ZED_TASK != true ]] && tmux new
 
