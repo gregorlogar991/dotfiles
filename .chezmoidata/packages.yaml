@@ -17,6 +17,7 @@ packages:
       - "datagrip"
       - "dbeaver-community"
       - "font-hack-nerd-font"
+      - "ghostty"
       - "intellij-idea"
       - "keeper-password-manager"
       - "maccy"
@@ -30,7 +31,6 @@ packages:
       - "shottr"
       - "spotify"
       - "visual-studio-code"
-      - "wezterm"
       - "zed"
       - "zen-browser"
     brews:
