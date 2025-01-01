@@ -1,6 +1,6 @@
 theme = catppuccin-mocha
 window-padding-color = background
-window-save_state = always
+window-save-state = always
 cursor-style = block
 title = " "
 macos-titlebar-proxy-icon = hidden
