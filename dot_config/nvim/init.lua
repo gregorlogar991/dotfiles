@@ -19,5 +19,4 @@ if not pcall(require, "lazy") then
 end
 
 require("lazy_setup")
-require("mini.ai").setup()
 require("polish")
