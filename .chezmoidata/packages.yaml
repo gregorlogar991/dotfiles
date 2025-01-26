@@ -1,7 +1,6 @@
 packages:
   darwin:
     taps:
-      - "'sre/tools', 'git@gitlab.sportradar.ag:sre/homebrew-tools.git'"
       - "FelixKratz/formulae"
       - "argoproj/tap"
       - "arl/arl"
@@ -95,8 +94,6 @@ packages:
       - "robusta-dev/krr/krr"
       - "shellcheck"
       - "sketchybar"
-      - "sre/tools/awsprofile"
-      - "sre/tools/smgo"
       - "starship"
       - "stern"
       - "stow"
