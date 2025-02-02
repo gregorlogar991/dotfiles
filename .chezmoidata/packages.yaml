@@ -78,6 +78,7 @@ packages:
       - "kubecolor"
       - "kubectx"
       - "kubent"
+      - "lazydocker"
       - "little-angry-clouds/my-brews/helmenv"
       - "little-angry-clouds/my-brews/kbenv"
       - "maven"
