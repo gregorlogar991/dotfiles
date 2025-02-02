@@ -90,6 +90,7 @@ packages:
       - "neovim"
       - "node"
       - "pkgconf"
+      - "posting"
       - "redis"
       - "ripgrep"
       - "robusta-dev/krr/krr"
