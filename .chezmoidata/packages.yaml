@@ -60,6 +60,7 @@ packages:
       - "glib"
       - "gnupg"
       - "go"
+      - "go-task"
       - "gomplate"
       - "grep"
       - "grpcurl"
