@@ -1,0 +1,6 @@
+views:
+  v1/pods:
+    sortColumn: AGE:asc
+    columns:
+      - AGE
+      - NAME
