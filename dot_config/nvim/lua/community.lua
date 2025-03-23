@@ -6,7 +6,6 @@
 return {
 	"AstroNvim/astrocommunity",
 	{ import = "astrocommunity.pack.lua" },
-	-- import/override with your plugins folder
 	{ import = "astrocommunity.colorscheme.catppuccin" },
 	{ import = "astrocommunity.diagnostics.trouble-nvim" },
 	{ import = "astrocommunity.git.blame-nvim" },
@@ -16,9 +15,10 @@ return {
 	{ import = "astrocommunity.pack.docker" },
 	{ import = "astrocommunity.pack.go" },
 	{ import = "astrocommunity.pack.helm" },
-	{ import = "astrocommunity.pack.java" },
 	{ import = "astrocommunity.pack.lua" },
 	{ import = "astrocommunity.pack.markdown" },
 	{ import = "astrocommunity.pack.python" },
 	{ import = "astrocommunity.pack.terraform" },
+	{ import = "astrocommunity.search.grug-far-nvim" },
+	{ import = "astrocommunity.utility.noice-nvim" },
 }
