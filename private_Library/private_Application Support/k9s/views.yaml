@@ -4,3 +4,8 @@ views:
     columns:
       - AGE
       - NAME
+  v1/nodes:
+    sortColumn: AGE:asc
+    columns:
+      - AGE
+      - NAME
