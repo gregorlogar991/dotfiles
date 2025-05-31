@@ -2,4 +2,4 @@ git:
   paging:
     colorArg: always
     # For this to work, first install `brew install git-delta`
-    pager: delta --dark --paging=never --syntax-theme base16-256 -s
+    # pager: delta --dark --paging=never --syntax-theme base16-256 -s

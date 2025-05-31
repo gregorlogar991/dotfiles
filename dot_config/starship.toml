@@ -44,7 +44,7 @@ contexts = []
 
 
 [python]
-disabled = true
+disabled = false
 
 [nodejs]
 disabled = true
